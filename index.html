@@ -1,216 +1,359 @@
 <!DOCTYPE html>
-<html lang="vi">
+<!-- saved from url=(0021)/ -->
+<html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HackBCR</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<style>
-:root{
-  --bg:#050812;
-  --bg2:#020617;
-  --card:#0f172a;
-  --neon:#00f0ff;
-}
+    <title>Tool Hack Baccarat - Hackbcr.com</title>
+    <meta name="”robots”" content="”index," follow”="">
+    <meta http-equiv="”content-language”" content="”th”/">
+    <meta name="description" content="Tool Hack BCR AI 2025, Tool Hack Slot AI 2025, Tool Hack Baccarat 2025, Tool Hack Slot 2025, Hack Baccarat 2025, Hack Slot 2025">
+    <meta name="keywords" content="Baccarat, Slots, Fishs, Sports">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="RyJfQKMmPIglEvMwewrHldKRoefW5vapDaHkwDUE">
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:"Segoe UI",sans-serif;
-}
+    <!-- ---------------------------stylesheet---------------------- -->
+    <link href="https://hackbcr.com/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://hackbcr.com/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://hackbcr.com/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://hackbcr.com/css/swal2.css">
 
-body{
-  background:var(--bg);
-  color:#fff;
-  overflow-x:hidden;
-}
+    <link href="https://hackbcr.com/css/css2" rel="stylesheet">
+    <link rel="stylesheet" href="https://hackbcr.com/css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://hackbcr.com/css/main.css?v=1.0.3">
+    <link rel="stylesheet" href="https://hackbcr.com/css/all.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://hackbcr.com/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://hackbcr.com/css/animate.min.css">
+    <!-- ---------------------------script---------------------- -->
+    <script src="https://hackbcr.com/js/vue.js"></script>
+    <script src="https://hackbcr.com/js/particles.min.js"></script>
+    <!-- <script src="https://hackbcr.com/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://hackbcr.com/js/popper.min.js"></script>
+    <!-- <script src="https://hackbcr.com/js/bootstrap.min.js"></script>  -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-/* ===== HEADER ===== */
-header{
-  position:fixed;
-  top:0;
-  width:100%;
-  padding:18px 60px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background:rgba(5,8,18,.75);
-  backdrop-filter:blur(12px);
-  z-index:999;
-}
-
-header a{
-  color:#aaa;
-  margin-left:22px;
-  text-decoration:none;
-  transition:.3s;
-}
-header a:hover{
-  color:var(--neon);
-  text-shadow:0 0 10px var(--neon);
-}
-
-/* ===== HERO ===== */
-.hero{
-  height:100vh;
-  background:
-    radial-gradient(circle at top,#020617,#050812),
-    linear-gradient(120deg,#020617,#050812);
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.hero h1{
-  font-size:3.3rem;
-  animation:fadeUp 1s ease forwards;
-}
-
-.hero p{
-  margin-top:10px;
-  opacity:0;
-  animation:fadeUp 1s ease .3s forwards;
-}
-
-.hero button{
-  margin-top:35px;
-  padding:14px 40px;
-  border:none;
-  border-radius:30px;
-  background:var(--neon);
-  color:#000;
-  font-weight:600;
-  cursor:pointer;
-  transition:.3s;
-}
-
-.hero button:hover{
-  transform:scale(1.08);
-  box-shadow:0 0 30px var(--neon);
-}
-
-/* ===== SECTION ===== */
-section{
-  padding:120px 60px;
-}
-
-h2{
-  margin-bottom:40px;
-  font-size:2rem;
-}
-
-/* ===== GRID ===== */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:26px;
-}
-
-.card{
-  background:var(--card);
-  padding:34px;
-  border-radius:14px;
-  text-align:center;
-  opacity:0;
-  transform:translateY(40px);
-  transition:.7s ease;
-}
-
-.card.show{
-  opacity:1;
-  transform:none;
-}
-
-.card:hover{
-  box-shadow:0 0 35px rgba(0,240,255,.25);
-  transform:translateY(-6px);
-}
-
-/* ===== ABOUT ===== */
-.about p{
-  max-width:640px;
-  line-height:1.6;
-  color:#ccc;
-}
-
-/* ===== FOOTER ===== */
-footer{
-  padding:30px;
-  text-align:center;
-  background:var(--bg2);
-  color:#777;
-}
-
-/* ===== ANIMATION ===== */
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(35px)}
-  to{opacity:1;transform:none}
-}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:768px){
-  header{padding:16px 30px}
-  section{padding:100px 30px}
-  .hero h1{font-size:2.4rem}
-}
-</style>
+        gtag('config', 'G-BVRWTQQ1PC');
+    </script> -->
+        <!-- <link rel="stylesheet" href="https://hackbcr.com/css/home.css"> -->
 </head>
 
-<body>
-
-<header>
-  <div style="font-weight:700">HackBCR</div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#features">Features</a>
-    <a href="#about">About</a>
-  </nav>
-</header>
-
-<section class="hero" id="home">
-  <h1>Cyber Security Platform</h1>
-  <p>Advanced • Modern • High Performance</p>
-  <button onclick="document.querySelector('#features').scrollIntoView({behavior:'smooth'})">
-    Get Started
-  </button>
-</section>
-
-<section id="features">
-  <h2>Core Features</h2>
-  <div class="grid">
-    <div class="card">System Analysis</div>
-    <div class="card">Threat Detection</div>
-    <div class="card">Security Monitoring</div>
-  </div>
-</section>
-
-<section id="about" class="about">
-  <h2>About</h2>
-  <p>
-    A modern cyber-style interface inspired by high-tech security platforms.
-    Clean UI, smooth animation, optimized for performance and scalability.
-  </p>
-</section>
-
-<footer>
-  © 2026 HackBCR – All rights reserved
-</footer>
+<body class="home page-template page-template-fullwidth page-template-fullwidth-php page page-id-37 custom-background">
+<div id="particles-js-canvas">
+    <canvas class="particles-js-canvas-el" width="1349" height="641" style="width: 100%; height: 100%;"></canvas>
+</div>
 
 <script>
-/* Reveal animation when scroll */
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add("show");
+    // This script ensures that every page refreshes when user navigates back using browser
+    // back button
+    var perfEntries = performance.getEntriesByType("navigation");
+
+    if (perfEntries[0].type === "back_forward") {
+        location.reload(true);
     }
-  });
-},{threshold:0.2});
-
-document.querySelectorAll(".card").forEach(c=>observer.observe(c));
 </script>
+<div id="page" class="site">
+    <header>
+<section class="menu-lobby" id="menu-app">
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
+        <a class="navbar-brand" href="/">
+            <img class="logo-new" src="https://hackbcr.com/images/logo-2.png" alt="">
+        </a>
+        <div class="menu">
+                        <div class="menu_wrapper">
+                <a href="/" class="menu-item btn-home">
+                    <p>Trang chủ</p>
+                </a>
+                <div class="menu-item btn-user">
+                    <p>vuthien0a</p>
+                </div>
+                <div class="menu-item btn-credit btn-redeem">
+                    <p>0</p>
+                </div>
+<!--                <a href="#" class="menu-item btn-contact">-->
+<!--                    <p>Liên hệ</p>-->
+<!--                </a>-->
+                <div class="menu-item btn-logout">
+                    <p>Đăng xuất</p>
+                </div>
+            </div>
+            <div class="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </nav>
+</section>
+</header>
 
-</body>
+<div class="floating-btns">
+    </div>
+<div class="model-group">
+    <div class="overlay"></div>
+    <!-- -------------------user-------------- -->
+    <div class="model-item model-user">
+        <div class="btn-closeModel"></div>
+        <div class="wrapper">
+            <div class="title mb-4">
+                <h1>Thành viên hoạt động</h1>
+            </div>
+            <div class="user-info mb-3">
+                <div class="info-item">
+                    <p>Username</p>
+                    <p>vuthien0a</p>
+                </div>
+                <div class="info-item">
+                    <p>Tên</p>
+                                            <p>Trần Dương Kim Tuyến</p>
+                                    </div>
+                <div class="info-item">
+                    <p>Số điện thoại</p>
+                                            <p>0367978394</p>
+                                    </div>
+                <div class="info-item">
+                    <p>ID line</p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <form id="passChange">
+                <div class="wrapper_form">
+                    <div class="title-form">
+                        <p class="h5">Chỉnh sửa thông tin người dùng</p>
+                    </div>
+                    <div class="group-input">
+                        <div class="input-item">
+                            <label for="">Mật khẩu cũ</label>
+                            <input type="password" name="opass" placeholder="" utocomplete="off" required="">
+                        </div>
+                        <div class="input-item">
+                            <label for="">Mật khẩu mới</label>
+                            <input type="password" name="npass" placeholder="" utocomplete="off" required="">
+                        </div>
+                        <div class="input-item">
+                            <label for="">Nhập lại mật khẩu</label>
+                            <input type="password" name="rnpass" placeholder="" utocomplete="off" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="group-btn mt-4">
+                    <button type="button" class="btn-cancel"></button>
+                    <button type="submit" class="btn-confirm"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- -------------------redeem-------------- -->
+    <div class="model-item model-redeem">
+        <div class="btn-closeModel"></div>
+        <div class="wrapper">
+            <div class="title">
+                <h1>Nạp xu</h1>
+                <h3>Số xu còn lại<span id="navCredit2">0</span></h3>
+            </div>
+            <form <!--action="https://www.asst-theflash.com/lobby_casino.php-->">
+                <p class="mb-2 h5">Mã tín dụng</p>
+                <input class="bg-input mb-3" type="text" id="usercode" placeholder="Nhập Mã tín dụng ở đây !">
+<!--               <button type="button" class="btn-pastCredit" onclick="pasteValue()">Nhập mã nạp xu</button>-->
+                <div class="group-btn mt-4">
+                    <button type="button" class="btn-cancel"></button>
+                    <button type="button" class="btn-confirm" onclick="sendcode()"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- -------------------logout-------------- -->
+    <div class="model-item model-logout" id="logout-model">
+        <div class="btn-closeModel"></div>
+        <div class="wrapper text-center">
+            <div class="title">
+                <h1>Đăng xuất</h1>
+                <h3>Bạn có chắc muốn đăng xuất không?</h3>
+            </div>
+            <form <!--action="https://www.asst-theflash.com/lobby_casino.php-->">
+                <div class="group-btn mt-4">
+                    <button type="button" class="btn-cancel"></button>
+                    <button type="button" class="btn-confirm" onclick="logout()"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+	<div class="container container-fluid custom-lobby position-relative">
+        <div class="row lobby-header justify-content-center align-items-center">
+            <div class="text-lobby-header">
+                <img class="text-lobby" src="https://hackbcr.com/images/text_Lobby.png" alt="Lobby">
+            </div>
+        </div>
+        <div class="container all-programs">
+            <div class="row">
+            <div class="col-12 col-sm-6 game_colum box-game">
+                <div onclick="gotoLobby('https://hackbcr.com/lobby-casino')">
+                   <figure>
+                        <img src="https://hackbcr.com/images/game/baccarat.gif" alt="" width="100%">
+                   </figure>
+               </div>
+           </div>
+                <div class="col-12 col-sm-6 game_colum box-game">
+                    <a onclick="gotoSlot('https://hackbcr.com/NH/slot')">
+                        <figure>
+                            <img src="https://hackbcr.com/images/game/nohu.gif" alt="" width="100%">
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 game_colum box-game">
+                    <a onclick="gotoSlot('https://hackbcr.com/BC/slot')">
+                        <figure>
+                            <img src="https://hackbcr.com/images/game/banca.gif" alt="" width="100%">
+                        </figure>
+                    </a>
+                </div>
+            <div class="col-12 col-sm-6 game_colum box-game">
+                <a href="#">
+                   <figure>
+                    <img src="https://hackbcr.com/images/game/thethao.gif" alt="" width="100%">
+                   </figure>
+               </a>
+           </div>
+
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row lobby-footer justify-content-center align-items-center">
+<!--            <div class="logout" onclick="logout()">-->
+<!--                <a href="#">-->
+<!--					<img class="img-btn-logout-lobby" src="https://hackbcr.com/images/btn_logout_lobby.png" alt="">-->
+<!--				</a>-->
+<!--            </div>-->
+        </div>
+        <br><br><br><br><br><br><br><br>
+<p></p>
+    </div><!-- .entry-content -->
+
+        </div><!-- #main -->
+    <!-- #primary -->
+
+    <!-- .row -->
+    <!-- .container -->
+    <!-- #content -->
+        <footer id="colophon" class="site-footer navbar-light" role="contentinfo">
+        <div class="container pt-3 pb-3">
+            <div class="site-info">
+
+            </div><!-- close .site-info -->
+</div>
+
+
+<!-- <script src="https://hackbcr.com/js/main.js"></script> -->
+<script src="https://hackbcr.com/js/three.min.js"></script>
+<!-- <canvas width="1366" height="641" style="width: 1366px; height: 641px;"></canvas> -->
+<script src="https://hackbcr.com/js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="https://hackbcr.com/js/sweetalert2@10"></script>
+<script src="https://hackbcr.com/js/main.js?v=1.0.0"></script>
+<script src="https://hackbcr.com/js/modal.js?v=1.0.0"></script>
+<script>
+    // This script ensures that every page refreshes when user navigates back using browser
+    // back button
+    var perfEntries = performance.getEntriesByType("navigation");
+
+    if (perfEntries[0].type === "back_forward") {
+        location.reload(true);
+    }
+</script>
+<script>
+  //document.addEventListener("DOMContentLoaded" , () => {
+        particlesJS.load('particles-js-canvas', 'https://hackbcr.com/files/configcanvas.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    // })
+</script>
+<script>
+    const reduceCreditTime = 60000;
+</script>
+		<script src="https://hackbcr.com/js/owl.carousel.min.js"></script>
+        <script src="https://hackbcr.com/js/jquery.mousewheel.min.js"></script>
+		<script>
+			$('.slide-1').owlCarousel({
+			loop: false,
+			margin: 0,
+			center: true,
+			nav: true,
+			startPosition: 2,
+			responsive: {
+				0: {
+					startPosition: 1,
+					items: 1.6
+				},
+				460: {
+					items: 2
+				},
+				768: {
+					items: 3
+				},
+				1024: {
+					items: 4
+				},
+				1440: {
+					items: 5
+				}
+			}
+		});
+		$('.slide-2').owlCarousel({
+			loop: false,
+			margin: 0,
+			center: true,
+			nav: true,
+			startPosition: 2,
+			responsive: {
+				0: {
+					startPosition: 1,
+					items: 1.6
+				},
+				460: {
+					items: 2
+				},
+				768: {
+					items: 3
+				},
+				1024: {
+					items: 4
+				},
+				1440: {
+					items: 5
+				}
+			}
+		});
+	</script>
+    <script>
+        function gotoLobby(url)
+        {
+            let credit = 0;
+            if (credit <= 0){
+                Swal.fire({
+                    title: "Tài khoản của bạn đã hết",
+                    text: "Hãy liên hệ quản trị viên để được nạp thêm xu.",
+                });
+            }else{
+                window.location.href = url;
+            }
+        }
+        function gotoSlot(url)
+        {
+            let credit = 0;
+            if (credit <= 0){
+                Swal.fire({
+                    title: "Tài khoản của bạn đã hết",
+                    text: "Hãy liên hệ quản trị viên để được nạp thêm xu.",
+                });
+            }else{
+                window.location.href = url;
+            }
+        }
+    </script>
+	<script type="text/javascript" src="https://hackbcr.com/js/jquery.number.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"a4db43c7027343df967379f437d41ccb","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b92602b9a9503df',t:'MTc2NzYwOTgxNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
