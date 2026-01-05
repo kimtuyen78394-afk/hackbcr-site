@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HackBCR</title>
+
+<style>
+:root{
+  --bg:#050812;
+  --bg2:#020617;
+  --card:#0f172a;
+  --neon:#00f0ff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI",sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* ===== HEADER ===== */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:18px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(5,8,18,.75);
+  backdrop-filter:blur(12px);
+  z-index:999;
+}
+
+header a{
+  color:#aaa;
+  margin-left:22px;
+  text-decoration:none;
+  transition:.3s;
+}
+header a:hover{
+  color:var(--neon);
+  text-shadow:0 0 10px var(--neon);
+}
+
+/* ===== HERO ===== */
+.hero{
+  height:100vh;
+  background:
+    radial-gradient(circle at top,#020617,#050812),
+    linear-gradient(120deg,#020617,#050812);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:3.3rem;
+  animation:fadeUp 1s ease forwards;
+}
+
+.hero p{
+  margin-top:10px;
+  opacity:0;
+  animation:fadeUp 1s ease .3s forwards;
+}
+
+.hero button{
+  margin-top:35px;
+  padding:14px 40px;
+  border:none;
+  border-radius:30px;
+  background:var(--neon);
+  color:#000;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.hero button:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 30px var(--neon);
+}
+
+/* ===== SECTION ===== */
+section{
+  padding:120px 60px;
+}
+
+h2{
+  margin-bottom:40px;
+  font-size:2rem;
+}
+
+/* ===== GRID ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:26px;
+}
+
+.card{
+  background:var(--card);
+  padding:34px;
+  border-radius:14px;
+  text-align:center;
+  opacity:0;
+  transform:translateY(40px);
+  transition:.7s ease;
+}
+
+.card.show{
+  opacity:1;
+  transform:none;
+}
+
+.card:hover{
+  box-shadow:0 0 35px rgba(0,240,255,.25);
+  transform:translateY(-6px);
+}
+
+/* ===== ABOUT ===== */
+.about p{
+  max-width:640px;
+  line-height:1.6;
+  color:#ccc;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  padding:30px;
+  text-align:center;
+  background:var(--bg2);
+  color:#777;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(35px)}
+  to{opacity:1;transform:none}
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  header{padding:16px 30px}
+  section{padding:100px 30px}
+  .hero h1{font-size:2.4rem}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div style="font-weight:700">HackBCR</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Cyber Security Platform</h1>
+  <p>Advanced • Modern • High Performance</p>
+  <button onclick="document.querySelector('#features').scrollIntoView({behavior:'smooth'})">
+    Get Started
+  </button>
+</section>
+
+<section id="features">
+  <h2>Core Features</h2>
+  <div class="grid">
+    <div class="card">System Analysis</div>
+    <div class="card">Threat Detection</div>
+    <div class="card">Security Monitoring</div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About</h2>
+  <p>
+    A modern cyber-style interface inspired by high-tech security platforms.
+    Clean UI, smooth animation, optimized for performance and scalability.
+  </p>
+</section>
+
+<footer>
+  © 2026 HackBCR – All rights reserved
+</footer>
+
+<script>
+/* Reveal animation when scroll */
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("show");
+    }
+  });
+},{threshold:0.2});
+
+document.querySelectorAll(".card").forEach(c=>observer.observe(c));
+</script>
+
+</body>
+</html>
